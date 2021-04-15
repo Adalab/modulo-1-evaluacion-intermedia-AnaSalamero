@@ -1,8 +1,5 @@
 body {
-  margin-top: 10px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -10,18 +7,20 @@ body {
   background-color: white;
   width: 100%;
   position: fixed;
+  padding-top: 10px;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: none;
+  color: #4a4a4a;
 }
 
 .menu {
@@ -38,7 +37,7 @@ a:active {
 .submenu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 13px;
 }
@@ -48,6 +47,10 @@ a:active {
   text-transform: uppercase;
   color: #4a4a4a;
   font-family: "Rubik", sans-serif;
+}
+
+.item2 {
+  padding-left: 20px;
 }
 
 .main {
@@ -70,4 +73,38 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* tablet desktop */
+
+@media all and (min-width: 768px) {
+  .header {
+    padding-top: 20px;
+  }
+
+  .rightleft {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+
+  .item2 {
+    padding-left: 20px;
+  }
+
+  .texto {
+    font-size: 40px;
+  }
 }
